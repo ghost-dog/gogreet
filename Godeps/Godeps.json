@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/ghost-dog/gogreet",
+	"GoVersion": "go1.3.3",
+	"Deps": []
+}
