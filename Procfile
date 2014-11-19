@@ -1,1 +1,1 @@
-'web: gogreeter' 
+web: gogreed -port=$PORT
