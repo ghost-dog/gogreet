@@ -2,7 +2,7 @@ package main
  
  
 import (
-  "syscall"
+  "os"
   "log"
   "net/http"
   "html/template"
@@ -13,7 +13,7 @@ func main() {
   http.HandleFunc("/", root)
   http.HandleFunc("/greet", greeter)
   log.Println("Listening...")
-  err := http.ListenAndServe(":"+syscall.Getenv("PORT"), nil)
+  err := http.ListenAndServe(":" + os.Getenv("PORT"), nil)
 
  
  if err != nil {
