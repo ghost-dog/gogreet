@@ -1,1 +1,1 @@
-web: gogreed -port=$PORT
+web: gogreed 

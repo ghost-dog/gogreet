@@ -2,7 +2,7 @@ package main
  
  
 import (
-  "os"
+//  "os"
   "log"
   "net/http"
   "html/template"
@@ -13,8 +13,8 @@ func main() {
   http.HandleFunc("/", root)
   http.HandleFunc("/greet", greeter)
   log.Println("Listening...")
-  err := http.ListenAndServe(":" + os.Getenv("PORT"), nil)
-
+//  err := http.ListenAndServe(":" + os.Getenv("PORT"), nil)
+  err := http.ListenAndServe(":80", nil)
  
  if err != nil {
     log.Fatal("ListenAndServe: ", err)
